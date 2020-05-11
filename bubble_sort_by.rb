@@ -1,20 +1,15 @@
 def bubble_sort_by(arr)
-    index = 0
-    while index < arr.length - 1
-
-      yield(arr[i],arr[i + 1]) if block_given?
-      (arr.length - 1).times do |i|
-        if arr[i] > arr[i + 1]
-        arr[i], arr[i + 1] = arr[i + 1], arr[i]
-        end
-      end
-      index += 1
+  index = 0
+  while index < arr.length - 1
+    (arr.length - 1).times do |i|
+      arr[i], arr[i + 1] = arr[i + 1], arr[i] if yield(arr[i], arr[i + 1]).positive?
     end
-    arr
+    index += 1
+  end
+  p arr
 end
-  
-  #test case
-imp = [3, 8, 2, 4, 5]
-p bubble_sort_by(imp) do |left, right|
-        right - left
-    end
+
+imp = %w[welcome hi hey hello]
+bubble_sort_by(imp) do |left, right|
+  right.length - left.length
+end
