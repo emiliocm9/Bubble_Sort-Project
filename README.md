@@ -2,7 +2,7 @@
 
 In this project, we had to implement the bubble sort algorithm. Assignment was focus on the use of yield and passing a block to a method.
 
-![PROJECT:  Bubble Sort](https://github.com/emiliocm9/Web-Using-Bootstrap/blob/features/img/ProjectSS.png)
+![PROJECT:  Bubble Sort](https://github.com/emiliocm9/Bubble_Sort-Project/blob/develop/ProjectSS.png)
 
 ## Built With
 
