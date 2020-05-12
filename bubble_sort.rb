@@ -6,7 +6,7 @@ def bubble_sort(arr)
         arr[i], arr[i + 1] = arr[i + 1], arr[i]
       else
         arr[i] = arr[i]
-        end
+      end
     end
     index += 1
   end
